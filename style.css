@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+ul>li{
+    list-style-type: none;
+}
+p{
+    font-size: 15px;
+    text-align: justify;
+    font-weight: normal;
+    color: gray;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/* for mobile */
+[class*="col-"]{
+    width: 100%;
+}
+
+/* universal area */
+.navbar{
+    background: cadetblue;
+    margin: 0px auto;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.logo img{
+    width: 25%;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    background: white;
+    transition: 2s;
+}
+.logo img:hover{
+    transform: scale(1.5) rotate(360deg);
+}
+.logo{
+    margin-bottom: 20px;
+}
+.tittle h2{
+    border: 2px solid white;
+    padding: 0px; 
+    border-radius: 10px; 
+    margin-bottom: 20px; 
+
+}
+.com{
+    position: relative;
+    display: flex;
+}
+.com h2{
+    margin: 20px 10px;
+    color: white;
+}
+.com i{
+    padding: 10px 0px;
+    color: white;
+    
+}
+
+.com:hover .menu-bar{
+    margin-top: 10px;
+    width: 150px;
+    height: 300px;
+}
+
+.menu-bar{
+    display: none;
+    background: cadetblue;
+    width: 0px;
+    height: 0px;
+    display: block;
+    position: absolute;
+    top: 65px;
+    left: -10px;
+    overflow: hidden;
+    transition: 2s; 
+    z-index: 1; 
+    border: 1px solid white; 
+    
+}
+.menu-bar ul li{
+    padding: 10px 20px;
+    text-align: left;
+
+}
+.menu-bar ul li a{
+    color: white;
+    padding: 10px;
+    border: 2px solid white;
+    transition: .5s;
+}
+.menu-bar ul li a:hover{
+    background: gray;
+}
+/* navbar ends here */
+/* container2 start */
+.container2{
+    margin: 0px auto;
+    padding: 10px;
+    text-align: center;
+    color: gray;
+    
+    
+
+}
+.logo-icon-top{
+    
+    text-align: right;
+    
+}
+.logo-icon-top img{
+    border-radius: 50%;
+    text-align: right;
+    width: 100px;
+    height: 100px;
+    transition: 2s;
+}
+.logo-icon-top img:hover{
+    transform: rotate(360deg)  scale(2);
+}
+.intro h2{
+    padding: 10px;
+    font-family: 'Satisfy', cursive;
+    text-transform: uppercase;
+    line-height: 1.5em;
+}
+.intro h2 span{
+    font-family: 'Satisfy', cursive;
+    
+}
+.intro p{
+    padding: 10px 30px;
+    
+    
+}
+.logo-icon-buttom{
+    text-align: left;
+}
+.logo-icon-buttom img{
+    border-radius: 50%;
+    text-align: right;
+    width: 100px;
+    height: 100px;
+    transition: 2s;
+}
+.logo-icon-buttom img:hover{
+    transform: rotate(180deg) scale(2);
+}
+/* container2 end */
+/* container3 start */
+
+.container3{
+    background: cadetblue;
+    margin: 0px auto;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    
+}
+.container3 h1{
+    text-transform: uppercase;
+}
+.container3 hr{
+    text-align: center;
+}
+.picture img{
+    width: 200px;
+    border: 4px solid white;
+    border-radius: 50%;
+    
+}
+.content p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+.content p a{
+    font-size: 15px;
+    color: yellow;
+    font-weight: normal;
+}
+.container3::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* container3 end */
+.container4{
+    margin: 0px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.card-1{
+    flex-basis: 100%;
+    margin: 10px;  
+    padding: 20px;
+    background: gray;
+    color: white;
+}
+.card-1 .logo{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card-1 .tittle{
+    border: none;
+
+}
+.tittle h2{
+    text-align: center;
+    text-transform: uppercase;
+    background: cadetblue;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.card-1 .descrip ol li{
+    list-style-position: inside;
+    position: relative;
+
+}
+.card-1 .descrip ol li::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 25px;
+    background: white;
+    left: 0;
+    bottom: -15px;
+}
+.card-2{
+    flex-basis: 100%;
+    margin: 10px;  
+    padding: 20px;
+    background: gray;
+    color: white;
+}
+.card-2 .logo{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card-2 .tittle{
+    border: none;
+
+}
+.card-2 .descrip ol li{
+    list-style-position: inside;
+    padding: 20px 0px;
+    position: relative;
+}
+.card-2 .descrip ol li::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    border-radius: 25px;
+    background: white;
+    left: 0;
+    bottom: 0;
+}
+.card-2 .descrip ol li::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 10px;
+    border-radius: 25px;
+    background: cadetblue;
+    left: 0;
+    bottom: 0;
+}
+.HTML::after{
+    animation: HTML 2s linear 1s 5 forwards ;
+}
+@keyframes HTML{
+    to{
+        width: 90%;
+        
+    }
+    
+}
+.CSS::after{
+    animation: CSS 2s linear 1s 5 forwards ;
+}
+@keyframes CSS{
+    to{
+        width: 80%;
+        
+    }
+    
+}
+.SASS::after{
+    animation: SASS 2s linear 1s 5 forwards ;
+}
+@keyframes SASS{
+    to{
+        width: 60%;
+        
+    }
+    
+}
+.BOOTSTRAP::after{
+    animation: BOOTSTRAP 2s linear 1s 5 forwards ;
+}
+@keyframes BOOTSTRAP{
+    to{
+        width: 50%;
+        
+    }
+    
+}
+.JAVA-SCRIPT::after{
+    animation: JAVA-SCRIPT 2s linear 1s infinite forwards ;
+}
+@keyframes JAVA-SCRIPT{
+    to{
+        width: 20%;
+        
+    }
+    
+}
+/* container4 end */
+.container5{
+    width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    background: cadetblue;
+    border-radius: 10px;
+}
+.container5 form p {
+    text-align: center;
+    border: none;
+    
+}
+.container5 h2{
+    color: white;
+    text-transform: uppercase;
+}
+.container5 form textarea {
+    padding: 10px;
+    resize: none;
+    width: 250px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.container5 form button {
+    padding: 10px;
+    margin: 5px;
+    margin-top: 0px;
+    border-radius: 10px;
+    width: 100px;
+}
+#input{
+    border: 2px solid gray;
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+/* container5 end */
+.container6{
+    margin: 0px auto;
+    padding: 20px;
+    background: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container6 a{
+    padding:  10px;
+    background: white;
+    font-size: 20px;
+    text-align: center;
+    background-size: 100%  200%;
+    background-position: 0% 10%;
+    transition: .5s;
+}
+.container6 a:nth-child(1){
+    color: #1877F2 ;
+    background-image: linear-gradient(white 50%, #1877F2 50%);
+}
+.container6 a:nth-child(2){
+    color: #DA552F;
+    background-image: linear-gradient(white 50%, #DA552F 50%);
+}
+.container6 a:nth-child(3){
+    color: #0C6BA5;
+    background-image: linear-gradient(white 50%, #0C6BA5 50%);
+}
+.container6 a:nth-child(4){
+    color: #3AAF85 ;
+    background-image: linear-gradient(white 50%, #3AAF85 50%);
+}
+.container6 a:hover{
+    background-position: 0% 100%;
+    color: white;
+
+}
+.container6 h5 span{
+    font-size: 20px;
+    color: red;
+}
+/* container6 end */

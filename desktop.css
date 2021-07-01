@@ -1,0 +1,132 @@
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+p{
+   font-size: 18px;
+}
+.navbar{
+   padding: 0px;
+   flex-direction: row;
+}
+.logo img{
+   width: 80px;
+}
+.logo{
+   text-align: right;
+   flex-basis: 20%;
+   margin-bottom: 0px;
+}
+.navbar .tittle{
+
+   margin: 0px;
+   text-align: left;
+   flex-basis: 40%;
+   
+}
+.navbar .tittle h2{
+    border: none;
+    padding: 20px; 
+    margin-bottom: 0px; 
+}
+.com{
+   padding: 10px;
+   justify-content: flex-end;
+   flex-basis: 40%;
+}
+.menu-bar{
+   top: 80px; 
+   left: 260px;
+   
+   
+}
+/* navbar end here */
+.container2{
+   background: linear-gradient(
+      rgba(0,50,50,.568),
+      rgba(0,50,50,.568)
+   ), url('img/pic4.jpg');
+   background-size: cover;
+   background-position: center;
+   color: white;
+}
+.intro p{
+   color: white;
+   padding: 10px 250px;
+}
+.intro h2 span{
+   color: yellow;  
+}
+
+.intro p::first-letter{
+   font-size: 80px;
+   font-weight: bolder;
+   color: yellow;
+
+}
+/* container2 end */
+.picture img{
+   width: 300px;
+   border: none;
+   border-radius: 0;
+   margin-top: 50px;
+   
+}
+.content p a{
+   font-size: 18px;
+}
+/* container3 end */
+.container4{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+.card-1{
+   flex-basis: 40%;
+   padding: 20px;
+   background: gray;
+   color: white;
+   transition: 2s;
+
+}
+.card-1:hover{
+   box-shadow:  10px 10px 15px teal,
+               -10px -10px 15px teal ;
+}
+.card-2{
+   flex-basis: 40%;
+   padding: 20px;
+   background: gray;
+   color: white;
+   transition: 2s;
+
+}
+.card-2 .descrip{
+   margin-top: 150px;
+}
+.card-2:hover{
+   box-shadow:  10px 10px 15px teal,
+               -10px -10px 15px teal ;
+}
+/* container4 end */
+/* container5 end */
+.container6{
+   flex-direction: row;
+}
+.container6 .icon{
+   padding: 15px;
+   flex-basis: 50%;
+   
+}
+/* container6 end */
