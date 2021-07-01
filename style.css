@@ -412,13 +412,18 @@ p{
     color: #3AAF85 ;
     background-image: linear-gradient(white 50%, #3AAF85 50%);
 }
-.container6 a:hover{
-    background-position: 0% 100%;
-    color: white;
 
-}
 .container6 h5 span{
     font-size: 20px;
     color: red;
+}
+.my-anim{
+    animation: my-anim 2s linear 1s infinite forwards ;
+}
+@keyframes my-anim {
+   to{
+    background-position: 0% 100%;
+    color: white;
+   }
 }
 /* container6 end */
